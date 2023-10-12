@@ -1,0 +1,339 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #160a3e;
+	z-index: 3;
+}
+.navbar .logo{
+	margin-top: -15px;
+	margin-left: 30px;
+	width: 55px;
+	height: auto;
+	padding: 20px 5px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	color: royalblue;
+	border-radius: 2px;
+}
+.gallery-container{
+	display: none;
+    justify-content: center;
+	align-content: center;
+    align-items: flex-start;
+	flex-wrap: wrap;
+	height: auto;
+	background-color: var(--gallery-bg1);
+	border-radius: 15px;
+}
+body {
+    background-color: #160a3e;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 25%;
+	height: auto;
+	background: var(--bg-color3-1);
+	/* border-radius: 15px; */
+	position: relative;
+	color: var(--text-color2);
+	transition: all .5s ease;
+	padding: 5px 10px;
+	margin: 2% 2%;
+  }
+  
+.gallery .image {
+	display: flex;
+	width: inherit;
+	height: 130px;
+	/* border-radius: 10%; */
+	justify-content: center;
+	background-color: var(--image-bg2);
+	padding: 5px 10px;
+	overflow: hidden;
+}
+
+.gallery .image img{
+	width: 100%;
+	height: auto; 
+	align-content: center;
+	/* border-radius: 10%; */
+	/* padding: 10px 20px; */
+	transition: 0.4s;
+	object-fit: cover;
+}
+  
+.gallery .image__info {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* flex-grow: 1; */
+	/* justify-content: center; */
+	overflow: hidden;
+	padding: 15px;
+	gap: 3px;
+}
+
+.gallery .image__info .title {
+	font-weight: 750;
+	font-size: 17px;
+	line-height: 1.2em;
+	height: auto;
+	color: var(--text-color1);
+}
+  
+.gallery .image__info .content{
+	font-size: 17px;
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+	color: var(--text-color1);
+}
+
+.gallery .image__info .content p{
+	overflow: hidden;
+	line-height: 1.2em; /* Set the line-height to match the container */
+	height: calc(3*1.2em);
+	white-space: nowrap;
+    text-overflow: ellipsis;
+}
+  
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.photo-gallery .photo-box {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    margin: 10px; /* Adjust the margin to control spacing between photos */
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+    transition: transform 0.3s; /* Adding a transition for a smooth effect */
+}
+
+.photo-gallery .photo-box img {
+    width: 210px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.photo-gallery .photo-box .photo-info {
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.photo-gallery .photo-box h3 {
+    margin: 5px 0;
+    color: cyan; /* Changed text color to cyan */
+    font-size: 18px; /* Adjusted font size for better aesthetics */
+}
+
+.photo-gallery .photo-box p {
+    color: rgb(161, 161, 161);
+    margin-top: 15px;
+}
+
+.photo-gallery .photo-box:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    border-color: cyan; /* Change border color on hover */
+}
+
+
+
+
+
+
+/* ------------------------------------------------------- porfolio ------------------------------------------------------------- */
+
+
+.container3 {
+    padding: 2rem;
+    border-radius: 16px;
+	    /* background-color: #f59c86; */
+    /* From https://css.glass */
+    /* From https://css.glass */
+    /* background: rgba(229, 178, 165, 1); */
+
+    border-radius: 16px;
+    margin-block: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content {
+	margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    color: #373737;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.content>div {
+    display: none;
+}
+
+.container3 input {
+    display: none;
+}
+
+
+.card {
+    /* background-color: #f8c8bc; */
+    background-color:rgba(255, 255, 255, 0.1);
+	flex: 1;
+    display: inline-block;
+    margin: 25px;
+    border-radius: 13px;
+    z-index: 2;
+    height: 380px;
+    position: relative;
+    max-width: 360px;
+    padding: 2rem;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.card h3,
+.card p {
+    margin-block: 10px;
+    text-align: center;
+	color: white;
+}
+
+.card span {
+    position: absolute;
+    bottom: -25px;
+    z-index: 1;
+    left: 20px;
+    font-size: 60px;
+    
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card img {
+    border-radius: 13px;
+	height: 300px;
+    width: 355px;
+    transition: .3s ease-in-out;
+}
+
+#works {
+    height: 130px;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card #programmingLogo,
+.card #services {
+    max-height: 300px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+
+
+.container3 label {
+    color: #ffffff;
+    margin: 0 2rem 0 2rem;
+    border-radius: 13px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.container3 label:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.container3 input:checked+label {
+    background: cyan;
+    color: #000000;
+}
+
+#tab-1:checked~.content #content-1,
+#tab-2:checked~.content #content-2,
+#tab-3:checked~.content #content-3 {
+    display: block;
+    animation-name: inUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: .6s;
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px 10px;
+    }
+}
+
+@keyframes inUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    90% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	height: 10vh;
+}
+

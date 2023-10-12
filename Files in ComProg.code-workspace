@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../../../coding/Files in ComProg"
+		}
+	],
+	"launch": {
+		"configurations": [
+			{
+				"type": "chrome",
+				"name": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/WebDEV/activity.html",
+				"request": "launch",
+				"url": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/WebDEV/activity.html"
+			},
+			{
+				"type": "chrome",
+				"name": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/WebDEV/New%20folder/activity.html",
+				"request": "launch",
+				"url": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/WebDEV/New%20folder/activity.html"
+			},
+			{
+				"type": "chrome",
+				"name": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/3rd%20yr(1st%20sem)/WebDEV/New%20folder/home.html",
+				"request": "launch",
+				"url": "http://127.0.0.1:3000/c:/Users/Neber/OneDrive/Desktop/3rd%20yr(1st%20sem)/WebDEV/New%20folder/home.html"
+			}
+		]
+	}
+}

@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #160a3e;
+	z-index: 1;
+}
+.navbar .logo{
+	margin-top: -15px;
+	margin-left: 30px;
+	width: 55px;
+	height: auto;
+	padding: 20px 5px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	color: royalblue;
+	border-radius: 2px;
+}
+
+
+/*HOME*/
+ body {
+        background-color: #160a3e; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 100vh;
+    }
+
+    .photo {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 420px;
+        height: 550px;
+        border-radius: 30%;
+        padding: 10px;
+        margin-left: 100px;
+        border: 10px double gainsboro;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+        text-align: left;
+        margin-left: 5%;
+        color: white; /* Adjusted text color for better visibility */
+    }
+
+    .content h1 {
+        margin-bottom: 10px;
+        color: cyan;
+        font-size: 40px;
+    }
+
+    .content h2 {
+        color: white;
+    }
+
+    .content p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: rgb(161, 161, 161);
+    }
+
+    button {
+        background-color: royalblue;  
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px; 
+        cursor: pointer;
+        
+    }
+    button a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    button:hover {
+        background-color: cyan;
+    }
+
+  
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        height: 10vh;
+    }
