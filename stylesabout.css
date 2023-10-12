@@ -95,7 +95,7 @@ html {
 	margin-top: 5%;
 	border-radius: 10%;
 	display: grid;
-	grid-template-columns: 2fr 5fr;
+	grid-template-columns: 5fr 5fr;
 	grid-gap: 70px;
 	grid-template-areas: 'imagesect infosect'
 			     		 'skillsect skillsect';
@@ -115,9 +115,9 @@ html {
 
 }
 .imagesection img {
-	margin-top: 150px;
-	height: 450px;
-	position: relative;
+	margin-top: -150px;
+	height: 350px;
+	width: 600px;
 	
 
 	
@@ -245,6 +245,7 @@ html {
 	font-size: 17px;
 }
 .edubackground {
+	color: #dedce1;
 	align-items: center;
 	padding: 30px;
   }
@@ -256,6 +257,7 @@ html {
 }
   
   .school-info {
+	margin-block: 20px;
 	display: flex;
 	align-items: center;
   }
